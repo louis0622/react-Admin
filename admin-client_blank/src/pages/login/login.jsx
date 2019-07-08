@@ -92,8 +92,7 @@ class Login extends Component {
                         { pattern: /^[a-zA-Z0-9_]+$/, message: '用户名必须是由英文,数字,或下划线组成!' },
                       ], 
                   }   
-                )
-                (<Input prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }}/>} 
+                )(<Input prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }}/>} 
                     placeholder="Username"
                 />)
               }
@@ -105,8 +104,7 @@ class Login extends Component {
                   {
                     rules: [{validator: this.validatePwd},],
                   }
-                )
-                  (<Input prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }}/>}
+                )(<Input prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }}/>}
                     type="password" placeholder="Password"
                   />)
               }  
@@ -119,7 +117,7 @@ class Login extends Component {
           </Form>
         </section>
       </div>
-    );
+    )
   }
 }
 
